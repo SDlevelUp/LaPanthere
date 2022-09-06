@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -516,7 +516,6 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -677,7 +676,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -775,7 +774,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
@@ -876,6 +875,7 @@ h4 {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1039,4 +1039,43 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.white, .icon-md{
+    color: #FFFFFF!important;
+    font-size: 18px;
+}
+
+.accroche {
+    font-size: 30px;
+}
+
+.btn-d{
+    color: #FFFFFF!important;
+}
+.avis_site {
+    font-size:18px;
+    margin: auto;
+    max-width: 800px;
+}
+
+.avis_site>span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.description_Agence{
+    margin: auto;
+    max-width: 992px;
+    margin-bottom: 64px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+
+.img-responsive{
+    margin: auto;
 }
