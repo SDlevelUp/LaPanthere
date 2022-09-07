@@ -1,40 +1,28 @@
 <!doctype html>
-<html lang="fr">
+<html lang="Default">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="La Panthère est l'agence qui saura répondre à vos besoins en matière de stratégie, design et illustrations, faites nous confiance pour vous apportez la meilleure solution adaptée à vos projets">
-    <meta name="robots" content="contact, follow">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-    <link rel="apple-touch-icon" href="https://cdn.glitch.com/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Ftouchicon-180.png?v=1566411949736">
-
-
-
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
-	<title>Contact | Agence La Panthère agence de web design à Lyon</title>
+    
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
+    <title>page2</title>
 
-    <script src="./js/jquery-2.1.0.min.js" defer></script>
-	<script src="./js/bootstrap.min.js" defer></script>
-	<script src="./js/blocs.js" defer></script>
-	<script src="./js/jqBootstrapValidation.js" defer></script>
-	<script src="./js/formHandler.js" defer></script>
-
-
-
+    
 <!-- Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TZJ27BN7F"></script> -->
-<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-2TZJ27BN7F');
-</script>
+ 
 <!-- Analytics END -->
     
 </head>
@@ -47,19 +35,20 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">
-					<img src="img/agence-la-panthere-monochrome.svg" alt="Logo Agence La Panthere" height="50" /></a>
-					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-						<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button>
-				</div>
+				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40" /></a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="acceuil.html">Accueil</a>
+						<a href="index.html">Accueil</a>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
+					</li>
+					<li>
+						<a href="page2.html">page2 &gt;</a>
 					</li>
 				</ul>
 			</div>
@@ -73,10 +62,10 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text white accroche">
+				<h1 class="text-center hero-bloc-text tc-white">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg white tight-width-whitespace">
+				<p class="text-center mg-lg tc-white tight-width-whitespace">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -91,27 +80,27 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate >
+				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label for="name">
+						<label>
 							Nom
 						</label>
 						<input id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label for="email">
+						<label>
 							Adresse email
 						</label>
 						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label for="input_504">
+						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email"  required id="input_504" />
+						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
-						<label for="message">
+						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
@@ -120,13 +109,18 @@
 					</button>
 				</form>
 			</div>
+			<div class="col-sm-6">
+				<p>
+					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
-<a href="contact.html" class="btn btn-d scrollToTop" role="button" aria-label="back to top" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
 
@@ -137,32 +131,26 @@
 			<div class="col-sm-12">
 				<p class="text-center white">
 					Agence La Panthère - Agence web basée à Lyon.<br>
-					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi 
-					au vendredi<br>
 				</p>
-				<div class="flex social">
+				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com/" aria-label="Twitter">
-								<span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://fr-fr.facebook.com/" aria-label="Facebook">
-								<span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribbble.com/" aria-label="Dribbble">
-								<span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/" aria-label="Instagram">
-								<span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
@@ -174,7 +162,7 @@
 
 </div>
 <!-- Principal conteneur END -->
+    
 
-
-	</body>
+</body>
 </html>
